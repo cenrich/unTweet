@@ -15,11 +15,7 @@ body{
     }
   
 
-.tweet .tweet-header .user{
-float:left;
-}
-
-.tweet .tweet-header .user img.avatar{
+.tweet .tweet-header img.avatar{
 width: 60px;
 height: 60PX;
 background-color: #fff;
@@ -27,9 +23,15 @@ border-radius: 30PX;
 float:left; /*al agregar esto, deja de ocupar todo el espacio y libera espacio al contenido siguiente a acercarse*/
 }
 
+.tweet .tweet-header .user{
+    float:left;
+    margin: 10px 0 0 15px;
+}
+ 
 .tweet .tweet-header .account-name{
 font-weight: bold;
 font-size: 18px;
+margin:0; /*por ser párrafo, ya tenía un margen y por eso se la saqué*/
 }
 
 .tweet .tweet-header .user-name{
@@ -57,5 +59,5 @@ color:white;
 }
 
 /*.clear {
-    clear:both;
+    clear:both; esto da referencia para que el contenedor pueda envolver a todas las dependencias flotantes que puse
 }*/
