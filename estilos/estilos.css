@@ -8,6 +8,7 @@ body{
     width:600px;
     margin:0 auto;
     padding: 20px;
+    overflow:hidden;
 }
 
 .tweet .tweet-header {
@@ -70,18 +71,25 @@ color:white;
 .tweet .tweet-body .tweet-date {
     font-size: 18px;
     color:#999;
-    margin: 0;
+    margin: 0 0 18px 0;
 }
 
 .tweet .tweet-interactions {
     font-size: 18px;
-    color:#999;
-    overflow: hidden;    
+    overflow: hidden;
+    border-top: 1px solid rgb(204, 204, 204);
+    border-bottom: 1px solid rgb(204, 204, 204);
 }
 
+/*
+.tweet .tweet-interactions .tweet-stats-block {
+    border-right:1px solid rgb(204, 204, 204);    
+} esto es lo que no anda*/
+
 .tweet .tweet-interactions .tweet-stats {
+    color:#999;
     float:left;
-    margin: 18px 9px 18px 0;
+    margin: 15px 9px 15px 0;
 }
 
 .tweet .tweet-interactions .tweet-stats .tweet-stats-number{
@@ -89,11 +97,51 @@ color:white;
     color:#000;
 }
 
-.tweet .tweet-interactions .tweet-stats .avatar-list {
+.tweet .tweet-interactions .avatar-list {
     float:left;
     list-style-type:none;
+    margin: 0;
+    padding: 0 9px;
+    border-left:1px solid rgb(204, 204, 204);
+     }
+
+.tweet .tweet-interactions .avatar-list .avatar {
+    float:left;
+    background-color:#999;
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
+    border: 1px solid #999;
+    text-align: center;
+    margin: 12px 3px;
+    }
+.tweet .tweet-footer {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    font-size: 12px;
+    font-weight: bold;
+    color:#999;
+    }
+
+.tweet .tweet-footer li a {
+    text-decoration:none;
+    float: left;
+    margin: 12px 18px 5px 5px;
 }
 
-.tweet .tweet-interactions .tweet-stats .avatar-list .avatar {
-    float:left;
-    }
+.tweet .tweet-footer li a:hover {
+    color:#910000; /*esto pareciera no andar*/
+} 
+
+.tweet-reply {
+    width:600px;
+    margin:0 auto;
+    padding: 20px;
+    background-color: cadetblue;
+}
+.tweet-reply .reply-avatar {
+    width: 40px;
+    height: 40PX;
+    border-radius: 30PX;
+}
