@@ -16,8 +16,8 @@ body{
   
 
 .tweet .tweet-header img.avatar{
-width: 60px;
-height: 60PX;
+width: 50px;
+height: 50PX;
 background-color: #fff;
 border-radius: 30PX;
 float:left; /*al agregar esto, deja de ocupar todo el espacio y libera espacio al contenido siguiente a acercarse*/
@@ -51,6 +51,8 @@ padding: 6px 0; /*el primero es vertical, el horizontal no hace falta porque ya 
 color:#910000; /*la propiedad aplica a texto*/
 text-decoration: none; /*esta propiedad generalmente la usaremos para eliminar características que vienen por defecto, casi nunca para subrayar u otras cosas*/
 float:right;
+font-weight: bold;
+
 }
 
 .tweet .tweet-header .follow:hover{
@@ -58,6 +60,40 @@ background-color: #910000;
 color:white;
 }
 
-/*.clear {
-    clear:both; esto da referencia para que el contenedor pueda envolver a todas las dependencias flotantes que puse
-}*/
+.tweet .tweet-body {}
+
+.tweet .tweet-body .tweet-content {
+    font-size: 27px;
+    margin: 18px 0;
+}
+
+.tweet .tweet-body .tweet-date {
+    font-size: 18px;
+    color:#999;
+    margin: 0;
+}
+
+.tweet .tweet-interactions {
+    font-size: 18px;
+    color:#999;
+    overflow: hidden;    
+}
+
+.tweet .tweet-interactions .tweet-stats {
+    float:left;
+    margin: 18px 9px 18px 0;
+}
+
+.tweet .tweet-interactions .tweet-stats .tweet-stats-number{
+    font-weight: bold;
+    color:#000;
+}
+
+.tweet .tweet-interactions .tweet-stats .avatar-list {
+    float:left;
+    list-style-type:none;
+}
+
+.tweet .tweet-interactions .tweet-stats .avatar-list .avatar {
+    float:left;
+    }
