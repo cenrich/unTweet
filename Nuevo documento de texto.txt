@@ -1,0 +1,31 @@
+    <form class="tweet-reply">
+            <img class="reply-avatar" src="imagenes/jack.jpg" />
+            <input type="text" name="reply" placeholder="Tweet your reply" class="reply">
+    </form>
+
+
+.tweet-reply .reply-avatar {
+    width: 35px;
+    height: 35PX;
+    border-radius: 30PX;
+    margin: auto 10px;
+    float:left;
+}
+
+.tweet-reply .reply {
+    width:80%;
+    border:1px solid #e67373;
+    border-radius:5px;
+    float:left;
+/*    resize:Vertical;
+    overflow:scroll;*/
+    height: 35px;
+}
+
+/*qué me falta:
+agregarle un link a # de rt y favs
+agregarle propiedades al hover de los avatareas
+agregarle link a los avatares
+¿cómo hago para que se acomoden mejor? no consigo el centrado que quiero
+no sé cómo hacer para que el input crezca verticalmente con el texto
+*/
